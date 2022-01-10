@@ -10,30 +10,72 @@ body{
 	align-content: center;
 	font-family: 'Overpass', sans-serif;
 }
-.logo{
-	margin: 2%;
+img.logo{
+	margin: 7%;
+	font-weight: 20%;
+}
+img#toggle-button{
+	position: absolute;
+	top: 8%;
+	right: 10%;
 }
 .intro{
   width: 100%;
   height: 80vh;
   background-color:hsl(353, 100%, 62%);
   background-image: url(./images/bg-pattern-intro.svg);
-  background-size: 200% 200%;
-  background-position: 45% 50%;
+  background-size: 300% 300%;
+  background-position: 49% 34%;
   border-bottom-left-radius: 150px;
   color: white;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
+  position: relative;
+}
+ul#main-ul{
+	color: black;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	background-color: white;
+	top: 15% ;
+	right: 15%;
+	width: 70%;
+	text-align: center;
+	list-style: none;
+	padding: 5%;
+	border-radius: 10px;
+}
+ul#main-ul li{
+	padding: 4%;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+ul#main-ul button{
+ font-size: 1.2rem;
+	height: 40px;
+	width: 55%;
+	margin: 0 5% 0 5%;
+	border-radius: 25px;
+	border: none;
+	background-color: white;
+}
+ul#main-ul button#sign-up{
+ color: white;
+ background-image: linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+}
+ul.connect-li , ul.company-li , ul.product-li{
+	display: none;
 }
 .intro h2{
 	text-align: center;
 	font-size: 2.1rem;
-	padding: 10% 8% 8% 8%;
+	padding: 10% 15% 5% 15%;
 	font-weight: 700;
 }
 .intro p{
 	text-align: center;
 	font-size: 1.5rem;
-	padding: 0% 8% 10% 8%;
+	padding: 0% 8% 0 8%;
 	font-weight: 400;
 }
 .button-box{
@@ -41,9 +83,9 @@ body{
 	flex-direction: row;
 	justify-content: center;
 	align-content: center;
-	padding-bottom: 5%;
+	padding-bottom: 10%;
 }
-.button-box button{
+.button-box button {
 	color: white;
 	font-size: 1.1rem;
 	height: 55px;
@@ -56,7 +98,7 @@ body{
 	letter-spacing: 1px;
 }
 .button-box button:hover{
-	color: inherit;
+	color: hsl(353, 100%, 62%);
 	background-color: white;
 
 }
@@ -87,6 +129,7 @@ body{
 	background-color:hsl(237, 23%, 32%);
 	background-image: url(./images/bg-pattern-circles.svg);
 	background-position: 50% 150%;
+	background-size: 180% 150%;
 	background-repeat: no-repeat;
 	color: white;
 	text-align: center;
